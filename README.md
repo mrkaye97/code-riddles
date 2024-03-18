@@ -32,7 +32,7 @@ You have two objectives here:
 
 Some goals to shoot for:
 
-1. Can you write something that runs in under 2.5 seconds? What about under 100ms?
+1. Can you write something that runs in under 2.5 seconds? What about under 1 second?
 2. Can you write something that has a peak memory usage under 6Mb?
 
 ## Instructions
