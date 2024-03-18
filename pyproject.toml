@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "code-riddles"
+version = "0.1.0"
+description = ""
+authors = ["Matt Kaye <mrkaye97@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
