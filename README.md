@@ -4,7 +4,7 @@ An exercise for a talk at work on optimizing number crunching code. Inspired by 
 
 ## Introduction
 
-The objective of this exercise is to take a text file like this:
+The goal of this exercise is to take a text file like this:
 
 ```
 Hamburg;12.0
@@ -20,6 +20,18 @@ And get the mean, minimum, and maximum temperature per station, and output it li
 ```
 {Abha=5.0/18.0/27.4, Abidjan=15.7/26.0/34.1, Abéché=12.1/29.4/35.6, Accra=14.7/26.4/33.1, Addis Ababa=2.1/16.0/24.3, Adelaide=4.1/17.3/29.7, ...}
 ```
+
+## Objectives
+
+You have two objectives here:
+
+1. Minimize the runtime of your program (make it as fast as possible)
+2. Minimize the memory footprint of your program (use as little memory as possible)
+
+Some goals to shoot for:
+
+1. Can you write something that runs in under 2.5 seconds?
+2. Can you write something that has a peak memory usage under 6Mb?
 
 ## Instructions
 
@@ -46,4 +58,6 @@ Feel free to add dependencies as you need them.
 `python3 src/generate_data.py 100_000_000`
 ```
 
-4. Profile your code! I've pre-installed [memray](https://github.com/bloomberg/memray), a memory profiler, but feel free to use any tools you like
+4. Solve away! Use any tools + methods you like.
+
+5. Profile your code! I've pre-installed [memray](https://github.com/bloomberg/memray), a memory profiler, but feel free to use any tools you like
