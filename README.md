@@ -21,7 +21,7 @@ And get the mean, minimum, and maximum temperature per station, and output it li
 {Abha=5.0/18.0/27.4, Abidjan=15.7/26.0/34.1, Abéché=12.1/29.4/35.6, Accra=14.7/26.4/33.1, Addis Ababa=2.1/16.0/24.3, Adelaide=4.1/17.3/29.7, ...}
 ```
 
-For the purposes of this exercise, we'll just use 100m rows instead of 1bn.
+For the purposes of this exercise, we'll just use 100m rows instead of 1bn. In addition, the original challenge required that no external libraries are used, but in this exercise you can use any libraries you want.
 
 ## Objectives
 
