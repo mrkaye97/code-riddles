@@ -23,6 +23,8 @@ And get the mean, minimum, and maximum temperature per station, and output it li
 
 For the purposes of this exercise, we'll just use 100m rows instead of 1bn. In addition, the original challenge required that no external libraries are used, but in this exercise you can use any libraries you want.
 
+**Feel free to work in any language you'd like!**
+
 ## Objectives
 
 You have two objectives here:
@@ -37,7 +39,7 @@ Some goals to shoot for:
 
 ## Instructions
 
-First, you'll need to generate the data. I'd recommend cloning this repo, then:
+First, you'll need to generate the data. If you're working in Python, I'd recommend cloning this repo, then:
 
 1. Create a virtual environment:
 
@@ -63,3 +65,7 @@ python3 src/generate_data.py 100_000_000
 4. Solve away! Use any tools + methods you like.
 
 5. Profile your code! I've pre-installed [memray](https://github.com/bloomberg/memray), a memory profiler, but feel free to use any tools you like
+
+## Other Languages
+
+Even if you're not working in Python, you'll probably still want to generate the data using Python
