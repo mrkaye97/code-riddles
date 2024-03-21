@@ -163,3 +163,4 @@ data/measurements.txt
 .DS_Store
 profiles
 src/example_solution_*
+!src/example_solution_pandas.py
