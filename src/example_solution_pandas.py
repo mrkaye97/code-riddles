@@ -10,24 +10,18 @@ def main() -> None:
         names=["station", "temperature"],
     )
 
-    result = data.groupby("station").agg({"temperature": ["mean", "min", "max"]})
-    result.columns = list(map("_".join, result.columns.values))
+    aggregate_statistics = data.groupby("station").agg({"temperature": ["mean", "min", "max"]})
+    aggregate_statistics.columns = list(map("_".join, aggregate_statistics.columns.values))
 
-    result = (
-        result.reset_index()
-        .sort_values(by="station")
-        .assign(
-            formatted_result=lambda x: x["station"]
-            + "="
-            + round(x["temperature_min"], 1).astype(str)
-            + "/"
-            + round(x["temperature_mean"]).astype(str)
-            + "/"
-            + round(x["temperature_max"]).astype(str)
-        )
-    )
+    ordered_by_station = aggregate_statistics.reset_index().sort_values(by="station")
 
-    print("{" + result.formatted_result.str.cat(sep=", ") + "}")
+    result = ordered_by_station["station"] + \
+        "=" + round(ordered_by_station["temperature_min"], 1).astype(str) + \
+        "/" + round(ordered_by_station["temperature_mean"]).astype(str) + \
+        "/" + round(ordered_by_station["temperature_max"]).astype(str)
+
+
+    print("{" + result.str.cat(sep=", ") + "}")
 
 
 if __name__ == "__main__":
